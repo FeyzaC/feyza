@@ -9,6 +9,8 @@ import NotFound from "./pages/NotFound";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import PrivateRouter from "./pages/PrivateRouter";
+import Instagram from "./pages/Instagram";
+import Facebook from "./pages/Facebook";
 
 function App() {
   return (
@@ -16,9 +18,15 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/people" element={<PrivateRouter />} />
         <Route path="" element={<People />}></Route>
-        <Route path="/contact" element={<Contact />} />
+
+        <Route path="/contact" element={<Contact />}>
+          <Route index element={<Instagram />} />
+          <Route path="facebook" element={<Facebook />} />
+        </Route>
+
         <Route path="/login" element={<Login />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
