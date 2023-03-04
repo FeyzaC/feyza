@@ -1,5 +1,7 @@
+import Div from "../components/styles/Facebook.styled";
+
 const Facebook = () => {
-  return <div>facebook</div>;
+  return <Div>facebook</Div>;
 };
 
 export default Facebook;
