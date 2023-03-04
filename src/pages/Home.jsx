@@ -1,5 +1,7 @@
+import { Div } from "../components/styles/Home.styled";
+
 const Home = () => {
-  return <div>Home</div>;
+  return <Div>Home Page</Div>;
 };
 
 export default Home;

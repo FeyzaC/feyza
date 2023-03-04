@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
+import { Div, Links } from "./Nav.styled";
+
 const Nav = () => {
   return (
-    <div>
+    <Div>
       <ul>
-        <a href="#">Home</a>
-        <a href="#">People</a>
-        <a href="#">Contact</a>
-        <a href="#">Login</a>
+        <Links to="/">Home</Links>
+        <Links to="/people">People</Links>
+        <Links to="/contact">Contact</Links>
+        <Links to="/login">Login</Links>
       </ul>
-    </div>
+    </Div>
   );
 };
 

@@ -1,5 +1,11 @@
+import { Div } from "../components/styles/Contact.styled";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <Div>
+      <h5 className="text-center">Contact</h5>
+    </Div>
+  );
 };
 
 export default Contact;
